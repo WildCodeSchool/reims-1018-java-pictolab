@@ -14,42 +14,11 @@
 <h1>hello</h1>
 
 <div class="row">
+<% for (String activity : new String[]{ "1", "2", "3" }) {%>
     <div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
 		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
 	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
-	<div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="/activites"><img src="https://place-hold.it/100x100" alt="picto"/></a>
-	</div>
+<% } %>
 </div>
 
 
