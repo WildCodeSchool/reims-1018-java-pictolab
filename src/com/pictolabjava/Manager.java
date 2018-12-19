@@ -50,6 +50,10 @@ public class Manager {
 			"mardi et jeudi soirs"));
 	}
 	
+	public Activite activiteReturn(int choice) {
+		return this.activiteArray.get(choice);
+	}
+	
 }
 		
 	
