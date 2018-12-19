@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "Cobol";
+	src: url(Cobol.otf);
+}
+
+@font-face {
+	font-family: "Cobol-bold";
+	src: url(Cobol-Bold.otf);
+}
+
+h1 {
+	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+}
+
+.picto {
+	text-align: center;
+	padding-bottom: 8%;
+}
