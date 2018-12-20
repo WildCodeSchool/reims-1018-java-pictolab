@@ -14,7 +14,7 @@
 <ul class="list-group">
 	<% for(Activity activity : (List<Activity>)request.getAttribute("activities")) { %>
 		
-			<%=activity.getId()%>
+			<%=activity.getTitle()%>
 		
 	<% } %>
 </ul>
