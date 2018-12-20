@@ -75,6 +75,15 @@ public class ActivityManager {
 		}
 		return this.tagActivities;
 	}
+	
+	public Activity getActivityById(int id) {
+		for (var activity: this.activities) {
+			if (activity.getId() == id) {
+				return activity;
+			}
+		}
+		return null;
+	}
 
 }
 		

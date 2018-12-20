@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.pictolab.beans.Activity;
 import com.pictolab.models.ActivityManager;
+import com.pictolab.models.ActivityTagManager;
 
 /**
  * Servlet implementation class activites
@@ -19,7 +20,7 @@ import com.pictolab.models.ActivityManager;
 public class ActivitiesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ActivityManager activityManager;
-	private ArrayList<Activity> activitiesByTag;
+	private ActivityTagManager activityTagManager;
 	
        
     /**
@@ -28,17 +29,21 @@ public class ActivitiesServlet extends HttpServlet {
     public ActivitiesServlet() {
         super();
         this.activityManager = new ActivityManager();
-        this.activitiesByTag=new ArrayList<Activity>();
+        this.activityTagManager = new ActivityTagManager();
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String urlName = request.getParameter("tag");
-		this.activitiesByTag=this.activityManager.getActivityByTag(urlName);
-				
-		request.setAttribute("activities", this.activitiesByTag);
+		int tagId = Integer.parseInt(request.getParameter("tag"));
+		
+        ArrayList<Activity> activitiesByTag=new ArrayList<Activity>();
+        for(var join : this.activityTagManager.getJoins().get(tagId)) {
+    		activitiesByTag.add(this.activityManager.getActivityById(join));
+        }
+
+		request.setAttribute("activities", activitiesByTag);
 	
 			
 		this.getServletContext().getRequestDispatcher("/WEB-INF/activities.jsp").forward(request,response);
