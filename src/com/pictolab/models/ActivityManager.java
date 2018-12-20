@@ -8,10 +8,12 @@ import com.pictolab.beans.Tag;
 public class ActivityManager {
 	private ArrayList<Activity> activities;
 	private ArrayList<String> tags;
+	private ArrayList<Activity> tagActivities;
 	
 	public ActivityManager(){
+		this.tagActivities=new ArrayList<Activity>();
 		this.tags=new ArrayList<String>();
-		for (int i=1; i<=3; i++) {
+		for (int i=1; i<=1; i++) {
 			this.tags.add("mental");
 		}
 		
@@ -58,15 +60,18 @@ public class ActivityManager {
 				"mardi et jeudi soirs"));*/
 	}
 	
-	public Activity getActivityByTag(String urlName) {
+	
+	
+	public ArrayList<Activity> getActivityByTag(String urlName) {
+		this.tagActivities.clear();
 		for (var activity: this.activities) {
-			for(int i=0; i<tags.size();i++){							
-				if (tags.get(i).equals(urlName)) {
-					return activity;
+			for(var tag: activity.getTags()){							
+				if (tag.equals(urlName)) {
+					this.tagActivities.add(activity);
 				}
-			}		
+			}
 		}
-		return null;
+		return this.tagActivities;
 	}
 
 }
