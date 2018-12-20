@@ -3,7 +3,6 @@ package com.pictolab.models;
 import java.util.ArrayList;
 
 import com.pictolab.beans.Activity;
-import com.pictolab.beans.Tag;
 
 public class ActivityManager {
 	private ArrayList<Activity> activitiesArray;
