@@ -7,26 +7,32 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.pictolabjava.ActivityManager;
+
 /**
  * Servlet implementation class activites
  */
 @WebServlet("/activites")
-public class ActivitesServlet extends HttpServlet {
+public class ActivitiesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private ActivityManager activityManager;
+	
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ActivitesServlet() {
+    public ActivitiesServlet() {
         super();
-        // TODO Auto-generated constructor stub
+        activityManager = new ActivityManager();
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		int id=1;
+		
+		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/activites.jsp").forward(request,response);
 	}
 
