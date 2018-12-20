@@ -1,7 +1,5 @@
 package com.pictolab.beans;
 
-import java.util.ArrayList;
-
 public class Activity {
 	
 	private int id;
