@@ -1,4 +1,4 @@
-package com.pictolab;
+package com.pictolab.controllers;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,33 +7,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.pictolabjava.ActivityManager;
-
 /**
- * Servlet implementation class activites
+ * Servlet implementation class IndexServlet
  */
-@WebServlet("/activites")
-public class ActivitiesServlet extends HttpServlet {
+@WebServlet("/index.html")
+public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private ActivityManager activityManager;
-	
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ActivitiesServlet() {
+    public IndexServlet() {
         super();
-        activityManager = new ActivityManager();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id=1;
-		
-		
-		this.getServletContext().getRequestDispatcher("/WEB-INF/activites.jsp").forward(request,response);
+		// TODO Auto-generated method stub
+		this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp").forward(request,response);
 	}
 
 }

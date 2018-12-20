@@ -1,9 +1,9 @@
-package com.pictolabjava;
+package com.pictolab.models;
 
 import java.util.ArrayList;
 
-import com.beans.Activity;
-import com.beans.Tag;
+import com.pictolab.beans.Activity;
+import com.pictolab.beans.Tag;
 
 public class ActivityManager {
 	private ArrayList<Activity> activitiesArray;

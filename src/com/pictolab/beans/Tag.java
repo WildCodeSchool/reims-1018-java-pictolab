@@ -1,4 +1,4 @@
-package com.beans;
+package com.pictolab.beans;
 
 import java.util.ArrayList;
 

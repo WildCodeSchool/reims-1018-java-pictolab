@@ -1,8 +1,8 @@
-package com.pictolabjava;
+package com.pictolab.models;
 
 import java.util.ArrayList;
 
-import com.beans.Tag;
+import com.pictolab.beans.Tag;
 
 public class TagManager {
 	private ArrayList<Tag> tagArray;
