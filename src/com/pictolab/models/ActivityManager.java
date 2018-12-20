@@ -2,16 +2,35 @@ package com.pictolab.models;
 
 import java.util.ArrayList;
 
+/*************************************************************/
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.MultimapBuilder;
+/*************************************************************/
 import com.pictolab.beans.Activity;
 import com.pictolab.beans.Tag;
 
 public class ActivityManager {
+	/*************************************************************/
+	public Multimap<Integer, Integer> joins;
+	/*************************************************************/
 	private ArrayList<Activity> activities;
 	private ArrayList<String> tags;
 	private ArrayList<String> tags2;
 	private ArrayList<Activity> tagActivities;
 	
 	public ActivityManager(){
+		/*************************************************************/
+		this.joins = MultimapBuilder.hashKeys().arrayListValues().build();
+		
+		
+		this.joins.put(1, 1);
+		this.joins.put(1, 2);
+		this.joins.put(2, 1);
+		
+		
+		this.joins.get(1);
+		/*************************************************************/
 		this.tagActivities=new ArrayList<Activity>();
 		this.tags=new ArrayList<String>();
 		this.tags.add("mental");
