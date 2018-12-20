@@ -10,6 +10,11 @@
 	src: url(Cobol-Bold.otf);
 }
 
+body {
+	width: 100%;
+	margin: auto;
+}
+
 h1 {
 	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
 }
@@ -17,4 +22,14 @@ h1 {
 .picto {
 	text-align: center;
 	padding-bottom: 8%;
+}
+
+.block {
+	margin-top: 30px;
+	max-width: 30%;
+	margin-left: 3%;
+}
+
+.btn {
+	background-color: #005F82;
 }

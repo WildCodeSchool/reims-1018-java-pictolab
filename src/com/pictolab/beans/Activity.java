@@ -27,7 +27,7 @@ public class Activity {
 		return title;
 	}
 	
-	public String getsummary() {
+	public String getSummary() {
 		return summary;
 	}
 
@@ -47,7 +47,7 @@ public class Activity {
 		this.title = title;
 	}
 	
-	public void setsummary(String summary) {
+	public void setSummary(String summary) {
 		this.summary=summary;
 	}
 
