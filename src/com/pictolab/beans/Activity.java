@@ -1,5 +1,7 @@
 package com.pictolab.beans;
 
+import java.util.ArrayList;
+
 public class Activity {
 	
 	private int id;
@@ -7,13 +9,15 @@ public class Activity {
 	private String summary;
 	private String content;
 	private String date;
+	private ArrayList<String> tags;
 	
-	public Activity(int id, String title, String summary, String content, String date) {
+	public Activity(int id, String title, String summary, String content, String date, ArrayList<String> tags) {
 		this.id=id;
 		this.title=title;
 		this.summary=summary;
 		this.content=content;
-		this.date=date;		
+		this.date=date;	
+		this.tags=tags;
 	}
 
 	public int getId() {
@@ -35,6 +39,11 @@ public class Activity {
 	public String getDate() {
 		return date;
 	}
+	
+	public ArrayList<String> getTags() {
+		return tags;
+	}
+	
 
 	public void setId(int id) {
 		this.id = id;
@@ -54,6 +63,9 @@ public class Activity {
 
 	public void setDate(String date) {
 		this.date = date;
+	}
+	public void setTags(ArrayList<String> tags) {
+		this.tags=tags;
 	}
 
 }

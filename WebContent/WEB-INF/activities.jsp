@@ -1,9 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.List" %>
 <%@ page import="com.pictolab.beans.Activity" %>
-<%
-	Activity activity = (Activity) request.getAttribute("activity");
-%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +11,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<ul class="list-group">
+	<% for(Activity activity : (List<Activity>)request.getAttribute("activities")) { %>
+		
+			<%=activity.getTitle()%>
+		
+	<% } %>
+</ul>
 <div class = "article1">
 	<article>
 	 <p>Résumé de l'activité</p>
