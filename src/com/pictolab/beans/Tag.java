@@ -27,12 +27,12 @@ public class Tag {
 	}
 
 
-	public String geturlName() {
+	public String getUrlName() {
 		return urlName;
 	}
 
 
-	public ArrayList<Integer> getactivities() {
+	public ArrayList<Integer> getActivities() {
 		return activities;
 	}
 
@@ -47,12 +47,12 @@ public class Tag {
 	}
 
 
-	public void seturlName(String urlName) {
+	public void setUrlName(String urlName) {
 		this.urlName = urlName;
 	}
 
 
-	public void setactivities(ArrayList<Integer> activities) {
+	public void setActivities(ArrayList<Integer> activities) {
 		this.activities = activities;
 	}
 }
