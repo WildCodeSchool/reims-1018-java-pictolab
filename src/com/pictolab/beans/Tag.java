@@ -7,14 +7,14 @@ public class Tag {
 	private int id;
 	private String title;
 	private String urlName;
-	private ArrayList<Integer> activitiesIds;
+	private ArrayList<Integer> activities;
 
 	
-	public Tag(int id, String title, String urlName, ArrayList<Integer> activitiesIds) {
+	public Tag(int id, String title, String urlName, ArrayList<Integer> activities) {
 		this.id=id;
 		this.title=title;
 		this.urlName=urlName;
-		this.activitiesIds=activitiesIds;
+		this.activities=activities;
 	}
 
 	public int getId() {
@@ -32,8 +32,8 @@ public class Tag {
 	}
 
 
-	public ArrayList<Integer> getactivitiesIds() {
-		return activitiesIds;
+	public ArrayList<Integer> getactivities() {
+		return activities;
 	}
 
 
@@ -52,7 +52,7 @@ public class Tag {
 	}
 
 
-	public void setactivitiesIds(ArrayList<Integer> activitiesIds) {
-		this.activitiesIds = activitiesIds;
+	public void setactivities(ArrayList<Integer> activities) {
+		this.activities = activities;
 	}
 }
