@@ -5,14 +5,14 @@ import java.util.ArrayList;
 import com.pictolab.beans.Activity;
 
 public class ActivityManager {
-	private ArrayList<Activity> activitiesArray;
+	private ArrayList<Activity> activities;
 	
 	public ActivityManager(){
 		
-		this.activitiesArray= new ArrayList<Activity>();
+		this.activities= new ArrayList<Activity>();
 	
 		for(int i=1; i<=17; i++) {
-			this.activitiesArray.add(new Activity(i, "Fablab", "orem Elsass ipsum vielmols, und baeckeoffe", "orem Elsass ipsum vielmols, und baeckeoffe morbi varius lacus mamsell schneck rhoncus aliquam elementum Carola id, leo dolor kuglopf Heineken ac leo auctor, kartoffelsalad Chulien Christkindelsmärik yeuh. sagittis libero. vulputate turpis, knepfle Mauris amet s'guelt météor non DNA, placerat nullam sed schpeck Gal.", 
+			this.activities.add(new Activity(i, "Fablab", "orem Elsass ipsum vielmols, und baeckeoffe", "orem Elsass ipsum vielmols, und baeckeoffe morbi varius lacus mamsell schneck rhoncus aliquam elementum Carola id, leo dolor kuglopf Heineken ac leo auctor, kartoffelsalad Chulien Christkindelsmärik yeuh. sagittis libero. vulputate turpis, knepfle Mauris amet s'guelt météor non DNA, placerat nullam sed schpeck Gal.", 
 					"mardi et jeudi"));			
 		}
 		/*this.activitiesArray.add(new Activity(1, "Fablab", "orem Elsass ipsum vielmols, und baeckeoffe", "orem Elsass ipsum vielmols, und baeckeoffe morbi varius lacus mamsell schneck rhoncus aliquam elementum Carola id, leo dolor kuglopf Heineken ac leo auctor, kartoffelsalad Chulien Christkindelsmärik yeuh. sagittis libero. vulputate turpis, knepfle Mauris amet s'guelt météor non DNA, placerat nullam sed schpeck Gal.", 
@@ -52,7 +52,7 @@ public class ActivityManager {
 	}
 	
 	public Activity getActivityById(int id) {
-		for (var activity: this.activitiesArray) {
+		for (var activity: this.activities) {
 			if (activity.getId()==id) {
 				return activity;
 			}		
