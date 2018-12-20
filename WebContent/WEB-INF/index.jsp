@@ -18,7 +18,7 @@
 <div class="row">
 <% for (Tag tag : (List<Tag>)request.getAttribute("tags")) {%>
     <div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="<%=request.getContextPath()%>/activites?tag=<%=tag.getUrlName()%>"><img src="https://place-hold.it/100x100" alt="picto"/></a>
+		<a href="<%=request.getContextPath()%>/activites?tag=<%=tag.getUrlName()%>"><img src="https://raw.githubusercontent.com/WildCodeSchool/reims-1018-java-pictolab/master/pictogrammes/<%=tag.getUrlName()%>.png" alt="picto"/></a>
 	</div>
 <% } %>
 </div>
