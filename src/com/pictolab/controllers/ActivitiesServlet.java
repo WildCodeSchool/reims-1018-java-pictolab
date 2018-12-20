@@ -32,8 +32,8 @@ public class ActivitiesServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		activity1=this.activityManager.getActivityById(2);
+		String urlName="mental";
+		activity1=this.activityManager.getActivityByTag(urlName);
 		String title1=this.activity1.getTitle();
 		
 		request.setAttribute("activity1Title", title1);
