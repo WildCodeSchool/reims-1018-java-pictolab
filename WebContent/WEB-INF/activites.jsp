@@ -15,7 +15,7 @@
 	<article>
 	 <p><%= resume %></p>
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-	<p>Plus d'infos !</p>
+	Plus d'infos !
 	</button>
 	</article>
 </div>
