@@ -3,17 +3,24 @@ package com.pictolab.models;
 import java.util.ArrayList;
 
 import com.pictolab.beans.Activity;
+import com.pictolab.beans.Tag;
 
 public class ActivityManager {
 	private ArrayList<Activity> activities;
+	private ArrayList<String> tags;
 	
 	public ActivityManager(){
+		this.tags=new ArrayList<String>();
+		for (int i=1; i<=3; i++) {
+			this.tags.add("mental");
+		}
+		
 		
 		this.activities= new ArrayList<Activity>();
 	
 		for(int i=1; i<=17; i++) {
 			this.activities.add(new Activity(i, "Fablab", "orem Elsass ipsum vielmols, und baeckeoffe", "orem Elsass ipsum vielmols, und baeckeoffe morbi varius lacus mamsell schneck rhoncus aliquam elementum Carola id, leo dolor kuglopf Heineken ac leo auctor, kartoffelsalad Chulien Christkindelsmärik yeuh. sagittis libero. vulputate turpis, knepfle Mauris amet s'guelt météor non DNA, placerat nullam sed schpeck Gal.", 
-					"mardi et jeudi"));			
+					"mardi et jeudi", tags));			
 		}
 		/*this.activitiesArray.add(new Activity(1, "Fablab", "orem Elsass ipsum vielmols, und baeckeoffe", "orem Elsass ipsum vielmols, und baeckeoffe morbi varius lacus mamsell schneck rhoncus aliquam elementum Carola id, leo dolor kuglopf Heineken ac leo auctor, kartoffelsalad Chulien Christkindelsmärik yeuh. sagittis libero. vulputate turpis, knepfle Mauris amet s'guelt météor non DNA, placerat nullam sed schpeck Gal.", 
 				"mardi et jeudi"));
@@ -51,10 +58,12 @@ public class ActivityManager {
 				"mardi et jeudi soirs"));*/
 	}
 	
-	public Activity getActivityById(int id) {
+	public Activity getActivityByTag(String urlName) {
 		for (var activity: this.activities) {
-			if (activity.getId()==id) {
-				return activity;
+			for(int i=0; i<tags.size();i++){							
+				if (tags.get(i).equals(urlName)) {
+					return activity;
+				}
 			}		
 		}
 		return null;
