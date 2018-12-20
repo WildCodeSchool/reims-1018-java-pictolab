@@ -17,6 +17,7 @@ import com.pictolab.models.ActivityManager;
 public class ActivitiesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ActivityManager activityManager;
+	private Activity activity1;
 	
        
     /**
@@ -31,8 +32,11 @@ public class ActivitiesServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id=1;
-		Activity activity1=this.activityManager.getActivityById(id);
+		
+		activity1=this.activityManager.getActivityById(2);
+		String title1=this.activity1.getTitle();
+		
+		request.setAttribute("activity1Title", title1);
 	
 			
 		this.getServletContext().getRequestDispatcher("/WEB-INF/activities.jsp").forward(request,response);
