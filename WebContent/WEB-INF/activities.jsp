@@ -12,7 +12,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%=request.getAttribute("activity1Title") %>
 <div class = "article1">
 	<article>
 	 <p>Résumé de l'activité</p>
