@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.beans.Activite" %>
-<% Activite activite = (Activite) request.getAttribute("activite"); %>
+<%@ page import="com.beans.Activity" %>
+<%
+	Activity activite = (Activity) request.getAttribute("activite");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +12,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% for(String resume : Activite.getResume()) {%>
+<%
+	for(String resume : Activity.getResume()) {
+%>
 <div class = "article1">
 	<article>
 	 <p><%= resume %></p>

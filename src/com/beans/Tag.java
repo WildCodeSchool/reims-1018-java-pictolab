@@ -6,15 +6,15 @@ public class Tag {
 	
 	private int id;
 	private String title;
-	private String urlname;
-	private ArrayList<Integer> activite_id;
+	private String urlName;
+	private ArrayList<Integer> activitiesIds;
 
 	
-	public Tag(int id, String title, String urlname, ArrayList<Integer> activite_id) {
+	public Tag(int id, String title, String urlName, ArrayList<Integer> activitiesIds) {
 		this.id=id;
 		this.title=title;
-		this.urlname=urlname;
-		this.activite_id=activite_id;
+		this.urlName=urlName;
+		this.activitiesIds=activitiesIds;
 	}
 
 	public int getId() {
@@ -27,13 +27,13 @@ public class Tag {
 	}
 
 
-	public String getUrlname() {
-		return urlname;
+	public String geturlName() {
+		return urlName;
 	}
 
 
-	public ArrayList<Integer> getActivite_id() {
-		return activite_id;
+	public ArrayList<Integer> getactivitiesIds() {
+		return activitiesIds;
 	}
 
 
@@ -47,12 +47,12 @@ public class Tag {
 	}
 
 
-	public void setUrlname(String urlname) {
-		this.urlname = urlname;
+	public void seturlName(String urlName) {
+		this.urlName = urlName;
 	}
 
 
-	public void setActivite_id(ArrayList<Integer> activite_id) {
-		this.activite_id = activite_id;
+	public void setactivitiesIds(ArrayList<Integer> activitiesIds) {
+		this.activitiesIds = activitiesIds;
 	}
 }

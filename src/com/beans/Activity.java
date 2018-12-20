@@ -1,17 +1,17 @@
 package com.beans;
 
-public class Activite {
+public class Activity {
 	
 	private int id;
 	private String title;
-	private String resume;
+	private String summary;
 	private String content;
 	private String date;
 	
-	public Activite(int id, String title, String resume, String content, String date) {
+	public Activity(int id, String title, String summary, String content, String date) {
 		this.id=id;
 		this.title=title;
-		this.resume=resume;
+		this.summary=summary;
 		this.content=content;
 		this.date=date;		
 	}
@@ -24,8 +24,8 @@ public class Activite {
 		return title;
 	}
 	
-	public String getResume() {
-		return resume;
+	public String getsummary() {
+		return summary;
 	}
 
 	public String getContent() {
@@ -44,8 +44,8 @@ public class Activite {
 		this.title = title;
 	}
 	
-	public void setResume(String resume) {
-		this.resume=resume;
+	public void setsummary(String summary) {
+		this.summary=summary;
 	}
 
 	public void setContent(String content) {
