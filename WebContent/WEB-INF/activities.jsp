@@ -17,7 +17,7 @@
 			<a href="<%=request.getContextPath()%>/index.html" class="picto-home home-link"><img src="<%= request.getContextPath()%>/pictogrammes/home.png" width="40" height="40" alt="Retour à l'accueil"></a>
 			<a href="<%=request.getContextPath()%>/index.html" class= "home-link">Retour à l'accueil</a>
 	</nav>
-	<h3>#<%=request.getAttribute("tag")%></h3>
+	<h3 class= "titreTag">#<%=request.getAttribute("tag")%></h3>
 	<div class="row">
 	<% for(Activity activity : (List<Activity>)request.getAttribute("activities")) { %>	
 	
@@ -26,12 +26,12 @@
 	<article>
 	<h2><%=activity.getTitle()%></h2>
 	<p><%=activity.getSummary()%></p>
-	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#id<%=activity.getId()%>">
 	Plus d'infos !
 	</button>
 	</article>
 
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="id<%=activity.getId()%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
