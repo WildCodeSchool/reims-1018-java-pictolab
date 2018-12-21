@@ -20,7 +20,10 @@
 <div class="row">
 <% for (Tag tag : (List<Tag>)request.getAttribute("tags")) {%>
     <div class="picto col-6 col-sm-4 col-md-3 col-lg-2">
-		<a href="<%=request.getContextPath()%>/activites?tag=<%=tag.getId()%>"><img src="<%= request.getContextPath() %>/pictogrammes/<%=tag.getUrlName()%>.png" alt="<%=tag.getTitle()%>"/></a>
+    <div class="icn-container">
+    		<a href="<%=request.getContextPath()%>/activites?tag=<%=tag.getId()%>"><img src="<%= request.getContextPath() %>/pictogrammes/<%=tag.getUrlName()%>.png" alt="<%=tag.getTitle()%>"/></a>
+    
+    </div>
 	</div>
 <% } %>
 </div>
