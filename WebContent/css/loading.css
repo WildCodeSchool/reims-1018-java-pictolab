@@ -5,12 +5,14 @@ body
 
     background-color: #EF914B;
     transition-property: background-color; /* Active la transition sur background-color */
-    transition-duration: 1s; /* La transition dure 1s */
+    transition-duration: 1.3s; /* La transition dure 1s */
 }
 
 body:hover
 {
-    background-color: #005F82;
+    background-color: #00597c;
+   transition-property: background-color; /* Active la transition sur background-color */
+    transition-duration: 1.3s; /* La transition dure 1s */
 }
 
 #Enter {
@@ -19,19 +21,19 @@ body:hover
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 25%;
   
 }
 
 button {
     background: rgba(255,255,255,0);
     border : none;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -webkit-transition: -webkit-transform .8s ease-in-out; /* Active la transition ease-in-out et la duration */
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;  
 }
 button:hover {
-    transform:rotate(360deg);
+    transform:rotate(360deg); /* Permet de définir le deg max de la rotation durant l'animation */
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
 }
