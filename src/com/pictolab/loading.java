@@ -1,4 +1,4 @@
-package com.pictolab;
+	package com.pictolab;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class loading
  */
-@WebServlet("/loading")
+@WebServlet("/home")
 public class loading extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

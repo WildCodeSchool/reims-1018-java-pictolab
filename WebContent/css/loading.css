@@ -31,6 +31,8 @@ button {
     -webkit-transition: -webkit-transform .8s ease-in-out; /* Active la transition ease-in-out et la duration */
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;  
+    cursor: pointer;
+    
 }
 button:hover {
     transform:rotate(360deg); /* Permet de définir le deg max de la rotation durant l'animation */
