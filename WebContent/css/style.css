@@ -10,11 +10,121 @@
 	src: url(Cobol-Bold.otf);
 }
 
+body {
+	width: 100%;
+	margin: auto;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
 h1 {
 	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+h2{
+	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+	color: white;
+	padding-left: 3%;
+	padding-top: 2%;
+	background: repeating-linear-gradient(
+  	130deg,
+  	#0179a5,
+  	#0179a5 10px,
+  	#005F82 10px,
+  	#005F82 20px
+	);
+}
+
+h3 {
+	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	margin-top: 3%;
+	margin-left: 3%;
+	transform: skew(170deg);
+	letter-spacing: 2px;
+}
+
+h4{
+	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+	margin-left: 3%;
+	background-color:#EF914B;
+	width: 10px;
+}
+
+h5 {
+	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 22px;
+	margin: 1%;
+	margin-bottom: 2%;
+}
+
+hr {
+	width: 2%;
+	height: 1px;
+	border: 0;
+	color: black;
+	background-color: black;
+	margin-top: -15px;
+}
+
+nav {
+	margin-top: 4%;
+}
+
+.home-link{
+	color: black;
+	top: 10%;
+	margin-left: 1%;;
+}
+
+.home-link:hover {
+	color: #474747; 
+	text-decoration: none;
+}
+
+.picto-home {
+	margin-left: 2%;
+}
+
+.contactList{
+	list-style-type: none;
 }
 
 .picto {
 	text-align: center;
 	padding-bottom: 8%;
+}
+
+.block {
+	margin-top: 3%;
+	max-width: 30%;
+	margin-left: 3%;
+}
+
+.btn {
+	font-family: "Cobol";
+}
+
+.btn:hover {
+	background-color: #005F82;
+	color: white;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 18%;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.coordonnees{
+	margin-top: 3%;
+	
 }
