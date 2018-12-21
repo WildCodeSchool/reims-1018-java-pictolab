@@ -29,12 +29,14 @@ button
     border : none;
 }
 
-a.button:focus
-{
-	outline:none;
-}
-
-img
-{
-	outline:none;
+@button:active
+body{
+	  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 1s; /* Safari */
+  -webkit-transition-delay: 1s; /* Safari */
+  transition: width 1s;
+  transition-delay: 1s;
+	}
 }
