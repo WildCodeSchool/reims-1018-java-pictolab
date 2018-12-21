@@ -37,16 +37,19 @@ public class ActivitiesServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int tagId = Integer.parseInt(request.getParameter("tag"));
-		
-        ArrayList<Activity> activitiesByTag=new ArrayList<Activity>();
-        for(var join : this.activityTagManager.getJoins().get(tagId)) {
-    		activitiesByTag.add(this.activityManager.getActivityById(join));
-        }
+		if (tagId!=7) {
+			ArrayList<Activity> activitiesByTag=new ArrayList<Activity>();
+			for(var join : this.activityTagManager.getJoins().get(tagId)) {
+				activitiesByTag.add(this.activityManager.getActivityById(join));
+			}
 
-		request.setAttribute("activities", activitiesByTag);
-	
-			
-		this.getServletContext().getRequestDispatcher("/WEB-INF/activities.jsp").forward(request,response);
+			request.setAttribute("activities", activitiesByTag);
+				
+			this.getServletContext().getRequestDispatcher("/WEB-INF/activities.jsp").forward(request,response);
+		}
+		else {
+			this.getServletContext().getRequestDispatcher("/WEB-INF/contact.jsp").forward(request,response);
+		}
 	}
 
 }
