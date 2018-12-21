@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,8 +12,8 @@
 <title>Accueil</title>
 </head>
 <body class="container">
-
-<h1>hello</h1>
+ <img class="logo" src="<%= request.getContextPath() %>/pictogrammes/logo_pictolab.png" alt="pictolab"/>
+<h1 class="logo">Bienvenue</h1>
 
 <div class="row">
 <% for (Tag tag : (List<Tag>)request.getAttribute("tags")) {%>
