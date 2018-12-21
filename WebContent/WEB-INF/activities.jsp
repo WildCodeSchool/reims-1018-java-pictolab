@@ -12,6 +12,9 @@
 <title>Activités</title>
 </head>
 <body class="container">
+	<div class="lien">
+		<a href="<%= request.getContextPath()%>">Retour à l'accueil</a>
+	</div>
 	<div class="row">
 	<% for(Activity activity : (List<Activity>)request.getAttribute("activities")) { %>	
 	
