@@ -23,20 +23,15 @@ body:hover
   
 }
 
-button
-{
+button {
     background: rgba(255,255,255,0);
     border : none;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
 }
-
-@button:active
-body{
-	  width: 100px;
-  height: 100px;
-  background: red;
-  -webkit-transition: width 1s; /* Safari */
-  -webkit-transition-delay: 1s; /* Safari */
-  transition: width 1s;
-  transition-delay: 1s;
-	}
+button:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
 }
