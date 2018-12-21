@@ -44,6 +44,23 @@ h3 {
 	margin-top: 3%;
 }
 
+h4 {
+	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 22px;
+	margin: 1%;
+	margin-bottom: 2%;
+}
+
+hr {
+	width: 2%;
+	height: 1px;
+	border: 0;
+	color: black;
+	background-color: black;
+	margin-top: -15px;
+}
+
 nav {
 	margin-top: 4%;
 }
@@ -68,6 +85,8 @@ nav {
 }
 .titreTag{
 	margin-left: 3%;
+	transform: skew(170deg);
+	letter-spacing: 2px;
 }
 
 .picto {
