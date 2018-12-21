@@ -1,19 +1,20 @@
-package com.beans;
+package com.pictolab.beans;
 
-public class Activite {
+public class Activity {
 	
 	private int id;
 	private String title;
-	private String resume;
+	private String summary;
 	private String content;
 	private String date;
 	
-	public Activite(int id, String title, String resume, String content, String date) {
+	public Activity(int id, String title, String summary, String content, String date) {
 		this.id=id;
 		this.title=title;
-		this.resume=resume;
+		this.summary=summary;
 		this.content=content;
-		this.date=date;		
+		this.date=date;	
+	
 	}
 
 	public int getId() {
@@ -24,8 +25,8 @@ public class Activite {
 		return title;
 	}
 	
-	public String getResume() {
-		return resume;
+	public String getSummary() {
+		return summary;
 	}
 
 	public String getContent() {
@@ -44,8 +45,8 @@ public class Activite {
 		this.title = title;
 	}
 	
-	public void setResume(String resume) {
-		this.resume=resume;
+	public void setSummary(String summary) {
+		this.summary=summary;
 	}
 
 	public void setContent(String content) {
