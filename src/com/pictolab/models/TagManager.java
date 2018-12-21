@@ -2,6 +2,7 @@ package com.pictolab.models;
 
 import java.util.ArrayList;
 
+import com.pictolab.beans.Activity;
 import com.pictolab.beans.Tag;
 
 public class TagManager {
@@ -34,4 +35,13 @@ public class TagManager {
 	public ArrayList<Tag> getAllTags() {
 		return this.tags;
 	}
+	public Tag getTagById(int id) {
+		for (var tag: this.tags) {
+			if (tag.getId() == id) {
+				return tag;
+			}
+		}
+		return null;
+	}
+	
 }
