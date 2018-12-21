@@ -13,9 +13,9 @@
 </head>
 <body class="container">
  <img class="logo" src="<%= request.getContextPath() %>/pictogrammes/logo_pictolab.png" alt="pictolab"/>
-<h1 class="logo">Bienvenue</h1>
+<h1>Bienvenue</h1>
 <hr>
-<h5>Choississez votre thème</h5>
+<h5>1 clic = 1 découverte</h5>
 
 <div class="row">
 <% for (Tag tag : (List<Tag>)request.getAttribute("tags")) {%>
