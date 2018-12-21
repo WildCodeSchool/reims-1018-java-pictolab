@@ -17,7 +17,7 @@
 			<a href="<%=request.getContextPath()%>/" class="picto-home home-link"><img src="<%= request.getContextPath()%>/pictogrammes/home.png" width="40" height="40" alt="Retour à l'accueil"></a>
 			<a href="<%=request.getContextPath()%>/" class= "home-link">Retour à l'accueil</a>
 	</nav>
-
+	<h3><%=request.getAttribute("tag")%></h3>
 	<div class="row">
 	<% for(Activity activity : (List<Activity>)request.getAttribute("activities")) { %>	
 	
