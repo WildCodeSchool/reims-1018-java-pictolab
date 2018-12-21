@@ -14,8 +14,8 @@
 </head>
 <body class="container">
 	<nav>
-			<a href="<%=request.getContextPath()%>/index.html" class="picto-home home-link"><img src="<%= request.getContextPath()%>/pictogrammes/home.png" width="40" height="40" alt="Retour à l'accueil"></a>
-			<a href="<%=request.getContextPath()%>/index.html" class= "home-link">Retour à l'accueil</a>
+			<a href="<%=request.getContextPath()%>/home" class="picto-home home-link"><img src="<%= request.getContextPath()%>/pictogrammes/home.png" width="40" height="40" alt="Retour à l'accueil"></a>
+			<a href="<%=request.getContextPath()%>/home" class= "home-link">Retour à l'accueil</a>
 	</nav>
 	<h3 class= "titreTag">#<%=request.getAttribute("tag")%></h3>
 	<div class="row">
@@ -41,7 +41,8 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-			<p><%=activity.getContent()%></p>	      
+			<p><%=activity.getContent()%></p>	
+			<p><%=activity.getDate()%></p> 
 		  </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
