@@ -1,4 +1,4 @@
-@charset "UTF-8";
+	@charset "UTF-8";
 
 @font-face {
 	font-family: "Cobol";
@@ -96,7 +96,7 @@ nav {
 
 .picto {
 	text-align: center;
-	padding-bottom: 8%;
+	padding-bottom: 2%;
 }
 
 .block {
@@ -118,7 +118,7 @@ nav {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 18%;
+	width: 180px;
 	text-align: center;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -127,4 +127,25 @@ nav {
 .coordonnees{
 	margin-top: 3%;
 	
+}
+
+.icn-container{
+	width:100%;
+	height:100%
+}
+
+.icn-container a{
+	display:block;
+	transition: all 0.3s;
+    padding: 20px;
+}
+
+.icn-container a:hover{
+    padding: 30px;
+}
+
+.icn-container a img{
+	
+    width: 100%;
+    height: 100%;
 }
