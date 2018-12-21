@@ -42,9 +42,19 @@ h3 {
 	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
 	font-size: 30px;
 	margin-top: 3%;
+	margin-left: 3%;
+	transform: skew(170deg);
+	letter-spacing: 2px;
 }
 
-h4 {
+h4{
+	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
+	margin-left: 3%;
+	background-color:#EF914B;
+	width: 10px;
+}
+
+h5 {
 	font-family: "Cobol-Bold", Helvetica, Arial, sans-serif;
 	text-align: center;
 	font-size: 22px;
@@ -83,11 +93,6 @@ nav {
 .contactList{
 	list-style-type: none;
 }
-.titreTag{
-	margin-left: 3%;
-	transform: skew(170deg);
-	letter-spacing: 2px;
-}
 
 .picto {
 	text-align: center;
@@ -117,4 +122,9 @@ nav {
 	text-align: center;
 	margin-top: 2%;
 	margin-bottom: 2%;
+}
+
+.coordonnees{
+	margin-top: 3%;
+	
 }
