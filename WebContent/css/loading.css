@@ -18,8 +18,8 @@ body:hover
 #Enter {
   position: absolute;
   margin-left: auto;
-  margin-right: auto;
-  left: 0;
+
+  left: 40%;
   right: 0;
   top: 25%;
   
