@@ -8,13 +8,16 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/style.css"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Activités</title>
 </head>
 <body class="container">
-	<div class="lien">
-		<a href="<%= request.getContextPath()%>">Retour à l'accueil</a>
-	</div>
+	<nav>
+			<a href="<%=request.getContextPath()%>/" class="picto-home home-link"><img src="<%= request.getContextPath()%>/pictogrammes/home.png" width="40" height="40" alt="Retour à l'accueil"></a>
+			<a href="<%=request.getContextPath()%>/" class= "home-link">Retour à l'accueil</a>
+	</nav>
+
 	<div class="row">
 	<% for(Activity activity : (List<Activity>)request.getAttribute("activities")) { %>	
 	
@@ -23,7 +26,7 @@
 	<article>
 	<h2><%=activity.getTitle()%></h2>
 	<p><%=activity.getSummary()%></p>
-	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+	<button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
 	Plus d'infos !
 	</button>
 	</article>

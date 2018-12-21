@@ -11,18 +11,19 @@
 </head>
 <body class="container">
 	<h1>Contacts</h1>
-		<div class="lien">
-			<a href="<%= request.getContextPath()%>">Retour à l'accueil</a>
-		</div>
+		<nav>
+			<a href="<%=request.getContextPath()%>/" class="home-link"><img src="<%= request.getContextPath()%>/pictogrammes/home.png" width="40" height="40" alt="Retour à l'accueil"></a>
+			<a href="<%=request.getContextPath()%>/" class= "home-link">Retour à l'accueil</a>
+		</nav>
 	
-		<h2>Saint-Ex, culture numérique</h2>
+		<h3>Saint-Ex, culture numérique</h3>
 			<ul class="contactList">
 				<li>Chaussée Bocquaine, Esplanade André Malraux</li>
 				<li>51100 Reims</li>
 				<li>T. 03.26.77.41.41</li>
 			</ul>			
 			
-		<h2>Wild Code School</h2>
+		<h3>Wild Code School</h3>
 			<ul class="contactList">
 				<li>6, rue de St Brice</li>
 				<li>51100 Reims</li>
