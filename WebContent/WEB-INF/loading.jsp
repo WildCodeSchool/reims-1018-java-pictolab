@@ -8,7 +8,8 @@
 <title>Bienvenue sur PictoLab !</title>
 </head>
 <body>
-<a class="button" href="<%=request.getContextPath()%>/index.html"><button id="Enter"><img src="https://raw.githubusercontent.com/WildCodeSchool/reims-1018-java-pictolab/master/pictogrammes/aleatoire.png" alt="wcse"></button></a>
+<a class="button" href="<%=request.getContextPath()%>/index.html"><button id="Enter"><img class="logo" src="<%= request.getContextPath() %>/pictogrammes/logo_pictolab.png" alt="pictolab"/>
+</button></a>
 <div class="lds-ripple">
 	<div>
 	</div>
