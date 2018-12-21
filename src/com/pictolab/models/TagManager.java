@@ -2,6 +2,7 @@ package com.pictolab.models;
 
 import java.util.ArrayList;
 
+import com.pictolab.beans.Activity;
 import com.pictolab.beans.Tag;
 
 public class TagManager {
@@ -22,8 +23,8 @@ public class TagManager {
 		this.tags.add(new Tag(10, "Activités intellectuelles", "intellectuel"));
 		this.tags.add(new Tag(11, "Le matin", "matin"));
 		this.tags.add(new Tag(12, "Labo machine", "labomachine"));
-		this.tags.add(new Tag(13, "Activités numériques", "numérique"));
-		this.tags.add(new Tag(14, "Pour les séniors", "séniors"));
+		this.tags.add(new Tag(13, "Activités numériques", "numerique"));
+		this.tags.add(new Tag(14, "Pour les séniors", "seniors"));
 		this.tags.add(new Tag(15, "Bar éphémère", "bar"));
 		this.tags.add(new Tag(16, "Activités aléatoires", "aleatoire"));
 		this.tags.add(new Tag(17, "Robotique", "robotique"));
@@ -34,4 +35,13 @@ public class TagManager {
 	public ArrayList<Tag> getAllTags() {
 		return this.tags;
 	}
+	public Tag getTagById(int id) {
+		for (var tag: this.tags) {
+			if (tag.getId() == id) {
+				return tag;
+			}
+		}
+		return null;
+	}
+	
 }
