@@ -66,6 +66,9 @@ nav {
 .contactList{
 	list-style-type: none;
 }
+.titreTag{
+	margin-left: 3%;
+}
 
 .picto {
 	text-align: center;
